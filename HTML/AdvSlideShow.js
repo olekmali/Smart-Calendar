@@ -13,8 +13,9 @@ function DisplayNext()
     {
         slideIndex = 0;
     }
-    x[slideIndex].style.display = "block";
+    //x[slideIndex].style.display = "block";
     // window.alert(slideIndex);
+    window.document.currentAd.src=x[slideIndex].src;
     setTimeout(DisplayNext, 20000); // Change image every 20 seconds
 }
 

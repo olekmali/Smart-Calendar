@@ -88,45 +88,21 @@ div.content input[type='submit'] {
 
 
 /*SlideShow styling below*/
+.currentAd {
+    position: fixed;
+    top: 8%;
+    left: 2%;
+    right: 2%;
+    display:block;
+}
+
 .mySlides {
-position: fixed;
-top: 8%;
-left: 2%;
-right: 2%;
-
-display:none;
--webkit-animation:fade 2s;
--moz-animation:fade 2s;
-animation:fade 2s;
+    position: fixed;
+    top: 8%;
+    left: 2%;
+    right: 2%;
+    display:none;
 }
-
-@-webkit-keyframes fade {
-        0% {
-                opacity:0.1;
-        }
-        100% {
-                opacity:1;
-        }
-}
-
-@-moz-keyframes fade {
-        0% {
-                opacity:0.1;
-        }
-        100% {
-                opacity:1;
-        }
-}
-
-@keyframes fade {
-        0% {
-                opacity:0.1;
-        }
-        100% {
-                opacity:1;
-        }
-}
-
 
 
 /*removing "+Google Calendar" button*/
