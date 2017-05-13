@@ -1,22 +1,25 @@
+<!DOCTYPE html>
 <html>
 <head>
     <title>Mali Messenger</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Pragma" content="no-cache">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/JavaScript" src="common.js"></script>
 </head>
-
-<body>
-
+<body onload="startTimeout();">
 
     <!--tabs at the top-->
-
     <ul class="toptabs">
         <li><a href="index.html">Calendar</a></li>
-        <li><a href="Ads.html">Advertisements</a></li>
-        <li id="active"><a>Mali Messenger</a></li>
-        <li><a href="Announcements.html">Announcements</a></li>
+        <li><a href="default.html">Opportunities</a></li>
+        <li id=active><a>Mali Messenger</a></li>
+        <li><a href="newsfeed.html">News</a></li>
+        <li><a href="power.html">Power</a></li>
+        <li><a href="weather.html">Weather</a></li>
     </ul>
 
-    <!--all page content. has left margins for the side tabs-->
+    <!--all page content-->
     <div class="content">
 
 <?PHP
@@ -60,9 +63,6 @@ $mail->Subject = "Calendar Message";
 
 ?>
 
-</div>
-
-    <script src="idleDirect.js"></script>
-
+    </div>
 </body>
 </html>
