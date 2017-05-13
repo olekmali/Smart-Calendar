@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Smart Calendar</title>
+    <title>Current Weather</title>
     <meta charset="UTF-8">
     <meta http-equiv="Pragma" content="no-cache">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -10,19 +10,17 @@
 <body onload="startTimeout();">
     <!--tabs at the top-->
     <ul class="toptabs">
-        <li id="active"><a>Calendar</a></li>
+        <li><a href="index.html">Calendar</a></li>
         <li><a href="default.html">Opportunities</a></li>
         <li><a href="messenger.html">Mali Messenger</a></li>
         <li><a href="newsfeed.html">News</a></li>
         <li><a href="power.html">Power</a></li>
-        <li><a href="weather.html">Weather</a></li>
+        <li id=active><a>Weather</a></li>
     </ul>
 
     <!--all page content-->
     <div class="content">
-        <iframe class="content" scrolling="no"
-            src="https://calendar.google.com/calendar/embed?title=Doctor%20Malinowski%27s%20Calendar&amp;showPrint=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=600&amp;wkst=1&amp;hl=en&amp;bgcolor=%23FFFFFF&amp;src=olekmali%40fsmail.bradley.edu&amp;color=%235F6B02&amp;src=en.usa%23holiday%40group.v.calendar.google.com&amp;color=%23AB8B00&amp;ctz=America%2FChicago">
-        </iframe>
+        <img class="weather" src="https://radar.weather.gov/lite/N0R/ILX_0.png" style="width:96%">
     </div>
 
 </body>

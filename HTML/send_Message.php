@@ -21,10 +21,10 @@
 
 <?PHP
 
-require "/home/jason/vendor/phpmailer/phpmailer/PHPMailerAutoload.php";
+require "/var/www/Smart-Calendar/PHPMailerAutoload.php";
 
 $email="olekmali@fsmail.bradley.edu";
-$phone="3097121597@vtext.com";
+$phone="3093061131@@msg.fi.google.com";
 
 
 $mail = new PHPMailer(); // create a new object
@@ -34,9 +34,9 @@ $mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
 $mail->Host = "smtp.gmail.com";
 $mail->Port = 465; // or 587
 $mail->IsHTML(true);
-$mail->Username = "malismartcalendar@gmail.com";
-$mail->Password = "iotcalendar";
-$mail->SetFrom("example@gmail.com");
+$mail->Username = $_POST['guser'];
+$mail->Password = $_POST['gaslo'];
+$mail->SetFrom($_POST['guser']);
 $mail->Body = $_POST['message'];
 
 $messageType=$_POST['messageType'];

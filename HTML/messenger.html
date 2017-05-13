@@ -5,21 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="Pragma" content="no-cache">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script type="text/JavaScript" src="idleDirect.js"></script>
+    <script type="text/JavaScript" src="common.js"></script>
 </head>
 <body onload="startTimeout();">
 
     <!--tabs at the top-->
     <ul class="toptabs">
         <li><a href="index.html">Calendar</a></li>
-        <li><a href="Ads.html">Advertisements</a></li>
-        <li id="active"><a>Mali Messenger</a></li>
-        <li><a href="Announcements.html">Announcements</a></li>
+        <li><a href="default.html">Opportunities</a></li>
+        <li id=active><a>Mali Messenger</a></li>
+        <li><a href="newsfeed.html">News</a></li>
+        <li><a href="power.html">Power</a></li>
+        <li><a href="weather.html">Weather</a></li>
     </ul>
 
     <!--all page content-->
     <div class="content">
         <form action = "send_Message.php" method = "POST">
+            <p>
+                BUMail, IEEEMail or GMail:
+                <input type="text" name="guser" size="20">
+                &nbsp;&nbsp;
+                Password:
+                <input type="password" name="gaslo" size="20">
+                &nbsp;&nbsp;
+            </p>
+            <hr>
             <p>Message: </p>
             <p><textarea rows="9" cols="67" name="message"></textarea></p>    
             <p>Message type:&nbsp;<input type="radio" name="messageType" value="Regular" checked />&nbsp;Regular (email)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

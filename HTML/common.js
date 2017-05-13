@@ -22,7 +22,7 @@ function CheckIdleTime()
     {
         _idleSecondsCounter++;
     } else {
-        window.location.replace("Ads.html");
+        window.location.replace("default.html");
     }
 }
 

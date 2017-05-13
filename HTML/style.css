@@ -45,6 +45,12 @@ ul.toptabs li a:hover {background-color: #ddd;}
 }
 
 /*Content stuff*/
+iframe.content {
+    border-width: 0px;
+    width: 1240px;
+    height: 700px;
+}
+
 div.content {
     display: block;
     position: absolute;
@@ -86,9 +92,7 @@ div.content input[type='submit'] {
     float: right;
 }
 
-
-/*SlideShow styling below*/
-.currentAd {
+img.weather {
     position: fixed;
     top: 8%;
     left: 2%;
@@ -96,7 +100,17 @@ div.content input[type='submit'] {
     display:block;
 }
 
-.mySlides {
+
+/*SlideShow styling below*/
+img.currentAd {
+    position: fixed;
+    top: 8%;
+    left: 2%;
+    right: 2%;
+    display:block;
+}
+
+img.mySlides {
     position: fixed;
     top: 8%;
     left: 2%;

@@ -6,16 +6,16 @@ files_grabbed = []
 for files in types:
     files_grabbed.extend(glob.glob(files))
 
-# get all text in the Ads.html file and put in a string 
+# get all text in the default.html file and put in a string 
 # called htmlString
 os.chdir("..")
-with open('Ads.html', 'r') as myfile:
+with open('default.html', 'r') as myfile:
     htmlString=myfile.read()
 
 # split the string in between the '<!--images-->'
 picString = htmlString.split("<!--images-->")
 
-# what goes before and after file names in Ads.html
+# what goes before and after file names in default.html
 preFName = '<img class="mySlides" src="./images/';
 postFName = '" style="width:96%">';
 
@@ -28,6 +28,6 @@ newText += '\n        ';
 # replace the old text with the new for the new images
 htmlString = htmlString.replace(picString[1], newText);
 
-# write the htmlString into the Ads.html file
-writeFile = open("Ads.html", "w");
+# write the htmlString into the default.html file
+writeFile = open("default.html", "w");
 writeFile.write(htmlString);
