@@ -21,6 +21,8 @@
 
     <!--all page content-->
     <div class="content">
+        <h1>Message Status</h1>
+        <p>
 
 <?PHP
 
@@ -56,11 +58,11 @@ if(!$mail->Send())
 {
     echo "Mailer Error: " . $mail->ErrorInfo;
 } else {
-    echo "Message has been sent";
+    echo "The message has been sent.";
 }
 
 ?>
-
+        </p>
     </div>
 </body>
 </html>
