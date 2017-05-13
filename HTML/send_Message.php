@@ -24,7 +24,7 @@
 
 <?PHP
 
-require "/var/www/Smart-Calendar/PHPMailerAutoload.php";
+require "/var/www/Smart-Calendar/PHPmailer/PHPMailerAutoload.php";
 
 $email="olekmali@fsmail.bradley.edu";
 $phone="3093061131@@msg.fi.google.com";
