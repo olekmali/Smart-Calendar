@@ -44,22 +44,20 @@ $mail->Body = $_POST['message'];
 
 $messageType=$_POST['messageType'];
 
-if ($messageType == "Urgent"){
-$mail->AddAddress($phone);
-}
-
-else
-
+if ($messageType == "Urgent")
 {
-$mail->AddAddress($email);
-$mail->Subject = "Calendar Message";
+    $mail->AddAddress($phone);
+} else {
+    $mail->AddAddress($email);
+    $mail->Subject = "J328 Calendar Message";
 }
 
- if(!$mail->Send()) {
+if(!$mail->Send())
+{
     echo "Mailer Error: " . $mail->ErrorInfo;
- } else {
+} else {
     echo "Message has been sent";
- }
+}
 
 ?>
 
