@@ -13,7 +13,7 @@
     <ul class="toptabs">
         <li><a href="index.html">Calendar</a></li>
         <li><a href="default.html">Opportunities</a></li>
-        <li id=active><a>Mali Messenger</a></li>
+        <li><a href="messenger.html">Mali Messenger</a></li>
         <li><a href="newsfeed.html">News</a></li>
         <li><a href="power.html">Power</a></li>
         <li><a href="weather.html">Weather</a></li>
