@@ -17,6 +17,7 @@
         <li><a href="newsfeed.html">News</a></li>
         <li><a href="power.html">Power</a></li>
         <li><a href="weather.html">Weather</a></li>
+        <li><a href="about.html">About</a></li>
     </ul>
 
     <!--all page content-->
