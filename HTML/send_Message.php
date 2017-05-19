@@ -15,8 +15,10 @@
         <li><a href="default.html">Opportunities</a></li>
         <li><a href="messenger.html">Mali Messenger</a></li>
         <li><a href="newsfeed.html">News</a></li>
-        <li><a href="power.html">Power</a></li>
-        <li><a href="weather.html">Weather</a></li>
+        <li><a href="weather.html">Power</a></li>
+        <li><a href="radar.html">Weather</a></li>
+        <li><a href="radar.html">Radar</a></li>
+        <li><a href="forecast.html">Forecast</a></li>
         <li><a href="about.html">About</a></li>
     </ul>
 
