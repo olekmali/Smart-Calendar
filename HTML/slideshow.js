@@ -8,7 +8,7 @@ function DisplayNext()
     if (slideIndex >= x.length)
     {
         slideIndex = 0;
-        var r = Math.floor(Math.random() * 7);
+        var r = Math.floor(Math.random() * 8);
         switch (r)
         {
             case 0:
@@ -24,6 +24,9 @@ function DisplayNext()
                 window.location.replace("weather.html");
                 break;
             case 6:
+                window.location.replace("radar.html");
+                break;
+            case 7:
                 window.location.replace("forecast.html");
                 break;
             default:
